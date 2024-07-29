@@ -1,0 +1,105 @@
+* {
+    
+    box-sizing: border-box;
+  }
+  
+body {
+    background-color: #c9d2fc;
+  }
+
+.ghost-body{
+    position:absolute;
+    width: 145px;
+    height:150px;
+    background-color:white;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    border-radius: 150px 150px 0 0;
+    animation:float 3s infinite;
+}
+    @keyframes float{
+        0%   {top: 0px;}
+  25%  {top: 100px;}
+  75%  {top: 50px}
+    }
+    
+
+
+.left-eye{
+    position:absolute;
+    background-color:black;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    left:30px;
+    top:60px;
+}
+.right-eye{
+    position:absolute;
+    background-color:black;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    left:95px;
+    top:60px;
+}
+.ghost-mouth{
+    position:absolute;
+    width:21px;
+    height:10px;
+    background-color:black;
+    top:75px;
+    left:60px;
+    border-radius:50% 50% 50% 50%;
+    background: radial-gradient(110% 100% at top, transparent 50%, black 51%);
+}
+.ghost-cheek1{
+    position:absolute;
+    width:10px;
+    height:15px;
+    border-radius:50%;
+    background-color:lightpink;
+    transform:rotate(-65deg);
+    left:35px;
+    top:80px;
+    
+}
+.ghost-cheek2{
+    position:absolute;
+    width:10px;
+    height:15px;
+    border-radius:50%;
+    background-color:lightpink;
+    transform:rotate(65deg);
+    left:94px;
+    top:80px;
+}
+.ghost-bottom{
+    width:145px;
+    height:100px;
+    position:absolute;
+    display:flex;
+    top:150px;
+    background-color:transparent;
+    justify-content: space-between;
+}
+.ghost-bottom > div{
+    background-color:white;
+    width:36.25px;
+    height:20px;
+    border-radius:0 0 150px 150px;
+}
+.ghost-shadow{
+    position:absolute;
+    background-color:gray;
+    width:100px;
+    height:15px;
+    border-radius:50%;
+    top:200px;
+    left:25px;
+    background:radial-gradient(rgb(97, 115, 133),hsl(228, 49%, 79%));
+}
+
